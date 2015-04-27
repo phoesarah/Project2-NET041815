@@ -20,7 +20,11 @@ namespace Fibonacci
                 totalfirstsecond = firstnumber + secondnumber;
                 firstnumber = secondnumber;
                 secondnumber = totalfirstsecond;
-
+                
+                if (totalfirstsecond % 2 == 0)
+                {
+                
+                }
 
             }
             Console.ReadLine();
