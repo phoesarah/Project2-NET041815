@@ -19,17 +19,39 @@ namespace Name_Scores
     {
         static void Main(string[] args)
         {
+            string[] names = GetNames("D:/Workprograms/Project2-NET041815/names.text");
+            string[] sortedNames = AlphabatizeNames(names);
+            WriteNamesToFile("D:/Workprograms/Project2-NET041815/answers/p4aNames.txt", sortedNames);
+            GetNamesScore("D:/Workprograms/Project2-NET041815/answers/p4bNames.txt", sortedNames);
+        }
 
-            
-            using(StreamReader names = new StreamReader("names.txt"))
+        private static void GetNamesScore(string filename, string[] sortedNames)
+        {
+           // foreach(name in sortedNames)
             {
-              
-            }
-            using (StreamWriter writer = new StreamWriter("P4names.txt"))
-            {
-             
-                
+
             }
         }
+
+        private static void WriteNamesToFile(string filename, string[] sortedNames)
+        {
+            File.WriteAllLines(filename, sortedNames);
+        }
+
+        private static string[] AlphabatizeNames(string[] names)
+        {
+            string[] sortedNames = new string[names.Length];
+            names.CopyTo(sortedNames, 0);
+            Array.Sort(sortedNames);
+            return sortedNames;
+        }
+
+        private static string[] GetNames(string filename)
+        {
+           string [] names = File.ReadAllText(filename).Split(',');
+            return names;
+        }
+
+        
     }
 }

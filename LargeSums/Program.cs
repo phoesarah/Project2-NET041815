@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,13 @@ namespace LargeSums
     {
         static void Main(string[] args)
         {
+            string [] longnum = File.ReadAllLines("D:/Workprograms/Project2-NET041815/LargeSums/longnums.txt");
+            GetSorted(longnum);
+        }
+
+        private static void GetSorted(long[] longnum)
+        {
+            
         }
     }
 }

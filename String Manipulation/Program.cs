@@ -11,8 +11,7 @@ namespace String_Manipulation
 {
     class Program
     {
-
-       
+               
         static void Main(string[] args)
         {
             
@@ -34,8 +33,8 @@ namespace String_Manipulation
             char[] alphabet = new char[54] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K','L', 'M', 'N', 'O', 'P', 'Q',
             'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y','Z', 'A', 'a', 'b', 'c', 'd','e', 'f' , 'g' , 'h' ,'i', 'j' , 'k', 'l', 'm', 'n' ,
             'o','p' , 'q' ,'r' , 's', 't' , 'u', 'v' , 'w', 'x', 'y', 'z', 'a'};
-           // char lettertoreturn = 'o';
-            char lettertoreturn = '0';
+           
+            char lettertoreturn = ' ';
             for (int i = 0; i < alphabet.Length; i++)
             {
 
