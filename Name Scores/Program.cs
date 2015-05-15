@@ -23,13 +23,14 @@ namespace Name_Scores
             string[] sortedNames = AlphabatizeNames(names);
             WriteNamesToFile("D:/Workprograms/Project2-NET041815/answers/p4aNames.txt", sortedNames);
             GetNamesScore("D:/Workprograms/Project2-NET041815/answers/p4bNames.txt", sortedNames);
+            
         }
 
         private static void GetNamesScore(string filename, string[] sortedNames)
         {
            // foreach(name in sortedNames)
             {
-
+                
             }
         }
 

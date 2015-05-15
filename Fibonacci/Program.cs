@@ -8,13 +8,15 @@ namespace Fibonacci
 {
     class Program
     {
+
+        
         static void Main(string[] args)
         {
             int firstnumber = 1;
             int secondnumber = 0;
             int totalfirstsecond = 0;
             int sum = 0;
-
+            
             while (totalfirstsecond < 4000000)
             {
                 Console.Write(" " + Convert.ToString(totalfirstsecond));
